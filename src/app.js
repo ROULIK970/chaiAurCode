@@ -19,9 +19,6 @@ app.use(cookieParser())
 import userRouter from './routes/user.routes.js'
 
 app.use("/api/v1/users", userRouter)
-app.get("/test", (req, res) => {
-  console.log(req.cookies);
-  res.send("Check server console for cookies");
-});
+
 
 export {app}
